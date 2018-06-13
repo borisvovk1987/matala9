@@ -42,7 +42,7 @@ public:
          if(a==b)
          {
             failedTests++;
-            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" shouldn't equal "<<b<<"!\n";
+            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" should equal "<<b<<"!\n";
       
          }
          else
