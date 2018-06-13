@@ -39,14 +39,16 @@ public:
     TestCase& check_different(const T &a,const T &b)
     {
          totalTests++;
-         if(a!=b)
+         if(a==b)
          {
+            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" shouldn't equal "<<b<<"!\n";
+            failedTests++;
+
             passedTests++;
          }
          else
          {
-            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" shouldn't equal "<<b<<"!\n";
-            failedTests++;
+             passedTests++;
 
          }
          return *this;
