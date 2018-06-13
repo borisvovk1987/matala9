@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include <sstream>
+
 using namespace std;
 
 class TestCase{
@@ -14,7 +15,7 @@ class TestCase{
 
 
 public:
-    TestCase(string testName,ostream &out );
+    TestCase(const string testName, ostream &out);
     TestCase&  print();
 
     template <typename T>
