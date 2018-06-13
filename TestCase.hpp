@@ -41,10 +41,9 @@ public:
          totalTests++;
          if(a==b)
          {
-            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" shouldn't equal "<<b<<"!\n";
             failedTests++;
-
-            passedTests++;
+            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": "<<a<<" shouldn't equal "<<b<<"!\n";
+      
          }
          else
          {
@@ -85,8 +84,9 @@ public:
         }
         else
         {
-            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": Function should return "<<t3<<" but returned "<<function(t2)<<"\n";
             failedTests++;
+            out<<testName<<": Failure in test #"<<to_string(totalTests)<<": Function should return "<<t3<<" but returned "<<function(t2)<<"\n";
+            
         }
         return *this;
     }
