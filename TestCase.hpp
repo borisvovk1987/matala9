@@ -36,7 +36,7 @@ public:
     }
 
     template<typename T>
-    TestCase& check_different(const T &a,const T &b)
+    TestCase& check_different(T a,T b)
     {
          totalTests++;
          if(a==b)
