@@ -15,7 +15,7 @@ class TestCase{
 
 public:
     TestCase(string testName,ostream &out );
-    void  print();
+    TestCase&  print();
 
     template <typename T>
     TestCase& check_equal(const T &a,const T &b)
